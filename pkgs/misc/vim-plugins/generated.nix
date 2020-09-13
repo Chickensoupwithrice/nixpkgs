@@ -6650,6 +6650,18 @@ let
     meta.homepage = "https://github.com/thinca/vim-themis/";
   };
 
+  vim-tidal = buildVimPluginFrom2Nix {
+    pname = "vim-tidal";
+    version = "2020-08-31";
+    src = fetchFromGitHub {
+      owner = "tidalcycles";
+      repo = "vim-tidal";
+      rev = "f63b7014a03589c0066acbeee6b329c0693e223b";
+      sha256 = "1jqqfrz6ghwp7fwkfan8z9f20xdqf9h548ah2nv40qq1dsl7mvf4";
+    };
+    meta.homepage = "https://github.com/tidalcycles/vim-tidal/";
+  };
+
   vim-tmux = buildVimPluginFrom2Nix {
     pname = "vim-tmux";
     version = "2020-07-25";
