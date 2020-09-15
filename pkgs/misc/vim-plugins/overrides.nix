@@ -32,6 +32,9 @@
 
 # fruzzy dependency
 , nim
+
+# vim-zettel dependency
+, silver-searcher, ag, pandoc
 }:
 
 self: super: {
@@ -594,6 +597,15 @@ self: super: {
     in ''
       ln -s ${maple-bin}/bin/maple $target/bin/maple
     '';
+  });
+
+  taskwiki = super.taskwiki.overrideAttrs(old: {
+    dependencies = [ self.vimwiki ];
+    passthru.python3Dependencies = ps: [ ps.tasklib ps.setuptools ];
+  });
+
+  vim-zettel = super.vim-zettel.overrideAttrs(old: {
+    dependencies = [ pandoc fzf ag silver-searcher self.fzf-vim self.vimwiki ];
   });
 } // (
   let
