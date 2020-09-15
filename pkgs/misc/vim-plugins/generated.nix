@@ -714,12 +714,12 @@ let
 
   defx-nvim = buildVimPluginFrom2Nix {
     pname = "defx-nvim";
-    version = "2020-09-13";
+    version = "2020-09-15";
     src = fetchFromGitHub {
       owner = "Shougo";
       repo = "defx.nvim";
-      rev = "f5beca0c3b652c0c34bfb0f45636f8f99ce0aeef";
-      sha256 = "028d6riqvfd7cgdl16vqhnq06ihjmlv27hdpz0ccpkh2yszq16iq";
+      rev = "5fba91592786a7f9eec76b32abfc1ab7fa406d0e";
+      sha256 = "1q9y6l7lvq52qpkd2jjm0z2a9zbhgmjvlb10m186p8w521r7g4ci";
     };
     meta.homepage = "https://github.com/Shougo/defx.nvim/";
   };
@@ -3830,12 +3830,12 @@ let
 
   vim-airline = buildVimPluginFrom2Nix {
     pname = "vim-airline";
-    version = "2020-09-09";
+    version = "2020-09-15";
     src = fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline";
-      rev = "f5693986c4ce82e50f4feebda22cf8c2fed35438";
-      sha256 = "0jl58s0xp2snhpn5f7r3gacj6fi88hc8anxj9r36gww24j4y7kzw";
+      rev = "27b52acee77ccd5972cc385bb5017141c14bb120";
+      sha256 = "17k0a3rskmwhx10swm0wf92f2hj9dxan181j7n12gcp3q8qbqz94";
     };
     meta.homepage = "https://github.com/vim-airline/vim-airline/";
   };
