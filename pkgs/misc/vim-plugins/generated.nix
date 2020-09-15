@@ -5917,6 +5917,18 @@ let
     meta.homepage = "https://github.com/thinca/vim-prettyprint/";
   };
 
+  vim-processing = buildVimPluginFrom2Nix {
+    pname = "vim-processing";
+    version = "2017-05-01";
+    src = fetchFromGitHub {
+      owner = "sophacles";
+      repo = "vim-processing";
+      rev = "ccba46b540919b6cb774368837f4f80aa49fb8a3";
+      sha256 = "1irnpc08wlwwbbi48glv31s35dgn7329cqnhap66m9byqzsqyz2y";
+    };
+    meta.homepage = "https://github.com/sophacles/vim-processing/";
+  };
+
   vim-projectionist = buildVimPluginFrom2Nix {
     pname = "vim-projectionist";
     version = "2020-05-05";
