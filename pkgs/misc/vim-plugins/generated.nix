@@ -7010,6 +7010,18 @@ let
     meta.homepage = "https://github.com/mindriot101/vim-yapf/";
   };
 
+  vim-zettel = buildVimPluginFrom2Nix {
+    pname = "vim-zettel";
+    version = "2020-09-08";
+    src = fetchFromGitHub {
+      owner = "michal-h21";
+      repo = "vim-zettel";
+      rev = "7b1d3b0ede6ccdb4ee183daa2be79e7d7f2ef814";
+      sha256 = "16s0yfm9gwm7f6rcvc33wjwihx6rfclyb2j6cklb92zd4hnh38ig";
+    };
+    meta.homepage = "https://github.com/michal-h21/vim-zettel/";
+  };
+
   vim2hs = buildVimPluginFrom2Nix {
     pname = "vim2hs";
     version = "2014-04-16";

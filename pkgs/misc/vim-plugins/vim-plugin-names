@@ -311,6 +311,7 @@ mhinz/vim-sayonara
 mhinz/vim-signify
 mhinz/vim-startify
 michaeljsmith/vim-indent-object
+michal-h21/vim-zettel
 mileszs/ack.vim
 milkypostman/vim-togglelist
 mindriot101/vim-yapf
